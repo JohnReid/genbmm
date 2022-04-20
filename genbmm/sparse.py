@@ -280,7 +280,7 @@ class BandedMatrix:
                 if o < 0 or o >= n:
                     continue
 
-                val = torch.zeros(batch)
+                val = torch.zeros(batch, device=self.data.device)
                 for k in range(self.width):
                     pos = i + (k - self.lu)
                     if pos < 0 or pos >= n:

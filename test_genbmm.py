@@ -14,7 +14,6 @@ def b():
 
 
 def test_logbmm(a, b):
-
     # Log-Sum-Exp
     c = genbmm.logbmm(a, b)
 
